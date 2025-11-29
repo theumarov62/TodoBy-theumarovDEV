@@ -100,7 +100,7 @@ function TodoMain() {
 
       {/* Edit Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-3xl w-96 shadow-2xl border border-gray-200">
             <h3 className="text-xl font-bold mb-4 text-center text-blue-600">
               Todo Tahrirlash
@@ -125,13 +125,13 @@ function TodoMain() {
             ></textarea>
             <div className="flex justify-end gap-3 mt-2">
               <button
-                className="bg-gray-300 cursor-pointer hover:bg-gray-400 px-4 py-2 rounded-xl shadow-sm transition transform active:scale-95"
+                className="bg-gray-300 cursor-pointer transition-all duration-300 hover:bg-gray-400 px-4 py-2 rounded-xl shadow-sm transform active:scale-95"
                 onClick={() => setIsModalOpen(false)}
               >
                 Bekor qilish
               </button>
               <button
-                className="bg-gradient-to cursor-pointer from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-xl shadow-md transition transform active:scale-95"
+                className="bg-gradient-to-r cursor-pointer from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-4 py-2 rounded-xl shadow-md transition transform active:scale-95"
                 onClick={handleSaveEdit}
               >
                 Saqlash
