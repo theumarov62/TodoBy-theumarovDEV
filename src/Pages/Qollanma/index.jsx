@@ -27,16 +27,37 @@ function Qollanma() {
         </h2>
         <ul className="list-disc list-inside space-y-2 mb-6 text-gray-700">
           <li>
-            Todo qo‘shish va tahrirlash qismi hali to‘liq optimallashtirilmagan.
-          </li>
-          <li>Edit modal logikasi ba’zi hollarda noto‘g‘ri ishlashi mumkin.</li>
-          <li>
-            Componentlar nomlari ba’zi joylarda kichik harf bilan boshlangan,
-            React tavsiyalariga mos emas.
+            <strong>Edit modal logikasi hali mukammal emas:</strong> bir nechta
+            todo elementni bir vaqtda tahrirlashda xatolik yuz berishi mumkin.
+            Mobil ekranlarda layout buzilishi ehtimoli bor.
           </li>
           <li>
-            LocalStorage ishlashi ba’zi xatoliklar berishi mumkin, ayniqsa
-            noto‘g‘ri ma’lumot bilan saqlangan bo‘lsa.
+            <strong>
+              O‘chirish (Delete) funksiyasi ba’zi holatlarda noto‘g‘ri ishlashi:
+            </strong>{" "}
+            ID filtrlashda xatoliklar paydo bo‘lishi mumkin.
+          </li>
+          <li>
+            <strong>LocalStorage bilan ishlashda cheklovlar:</strong> noto‘g‘ri
+            saqlangan ma’lumotlar yoki katta hajmdagi todo elementlar bilan
+            xatolik yuz berishi mumkin.
+          </li>
+          <li>
+            <strong>Input validatsiyasi minimal:</strong> title yoki description
+            bo‘sh bo‘lsa, foydalanuvchiga batafsil xatolik xabari
+            ko‘rsatilmaydi.
+          </li>
+          <li>
+            <strong>Responsivlik:</strong> Katta todo ro‘yxatida scroll va modal
+            kichik ekranlarda to‘liq ko‘rinmasligi muammo tug‘dirishi mumkin.
+          </li>
+          <li>
+            <strong>Visual inconsistency:</strong> ba’zi tugmalar gradient,
+            ba’zilari plain color; UI bir hil emas.
+          </li>
+          <li>
+            <strong>Texnik kamchiliklar:</strong> Filter va earch funksiyalari
+            yo‘q.
           </li>
         </ul>
 
@@ -56,17 +77,34 @@ function Qollanma() {
         <div className="flex justify-center mb-4">
           <Link
             to="/"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-200"
+            className="px-6 py-3
+    bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
+    text-white font-semibold
+    rounded-xl
+    shadow-lg shadow-blue-500/40
+    hover:shadow-blue-600/60
+    hover:scale-105
+    active:scale-95
+    transition-all duration-300
+    z-50"
           >
             Orqaga
           </Link>
         </div>
 
         {/* Version */}
-        <p className="text-gray-500 text-center mt-4">
-          Bu Todo 1-versiyasi. <br />
-          Keyinchalik bu Todo 2-versiyasida Redux bilan to‘liq qilinadi.
-        </p>
+        <div className="text-gray-500 text-center mt-4">
+          Bu Todo 2-versiyasi. <br />
+          Keyinchalik bu Todo 3-versiyasida quyidagi funksiyalar qo‘shilishi
+          rejalashtirilgan:
+          <ul className="list-disc list-inside mt-2 text-gray-500">
+            <li>Todo filtr va qidiruv funksiyalari</li>
+            <li>Drag & Drop bilan tartiblash imkoniyati</li>
+            <li>Fayllar yoki rasm qo‘shish funksiyasi</li>
+            <li>Yangi UI/UX yaxshilanishlari</li>
+            <li>Push notification / reminder funksiyasi</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
