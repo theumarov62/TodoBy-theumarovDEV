@@ -63,7 +63,10 @@ function Qollanma() {
         </div>
 
         {/* Version */}
-        <p className="text-gray-500 text-center mt-4">Bu Todo 1-versiyasi</p>
+        <p className="text-gray-500 text-center mt-4">
+          Bu Todo 1-versiyasi. <br />
+          Keyinchalik bu Todo 2-versiyasida Redux bilan to‘liq qilinadi.
+        </p>
       </div>
     </div>
   );
